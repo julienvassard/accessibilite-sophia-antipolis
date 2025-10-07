@@ -157,19 +157,16 @@ p {
   border-radius: 6px
 }
 
-.card header h2 {
+.card h2 {
   margin: 0 0 0.45rem 0;
-  font-size: 1.1rem
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem
 }
 
 .card p {
   margin: 0 0 0.75rem 0;
   color: var(--muted);
   flex: 1 0 auto
-}
-
-.card header {
-  margin-bottom: 0.25rem
 }
 
 .card a {
@@ -203,7 +200,7 @@ p {
 
 .filiere-grid {
   display: flex;
-  gap: 1rem;
+  gap: 2.7rem;
   overflow-x: auto;
   padding: 0.5rem 0;
 }
@@ -212,14 +209,68 @@ p {
   background: var(--surface);
   padding: 0.6rem;
   border-radius: 8px;
-  scroll-snap-align: center
+  min-width: 250px;
+  height: 100%;
 }
 
+
 .filiere-card img {
-  width: 100%;
   height: 140px;
   object-fit: cover;
   border-radius: 6px
+}
+
+
+.filiere-link {
+  text-decoration: none;
+  color: inherit;
+  min-width: 250px;
+}
+
+.filiere-link:focus .filiere-card,
+.filiere-link:hover .filiere-card {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.filiere-carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.carousel-btn {
+  background: var(--brand);
+  color: var(--surface);
+  border: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 5px;
+  font-size: 2rem;
+}
+
+.carousel-btn:focus {
+  outline: 3px solid var(--title);
+}
+
+.carousel-btn.prev {
+  margin-right: 0.5rem;
+}
+
+.carousel-btn.next {
+  margin-left: 0.5rem;
+}
+
+@media (min-width:700px) {
+  .filiere-grid {
+    gap: 2.7rem;
+  }
+
+  .filiere-card {
+    min-width: 0;
+    flex: 1 1 calc(33% - 1rem);
+  }
 }
 
 #actualites {
@@ -372,7 +423,7 @@ p {
   width: 100%;
 }
 
-#evenements header h2 {
+#evenements h2 {
   margin: 0 0 0.45rem 0;
   font-size: 2.1rem;
   color: var(--brand);
@@ -386,7 +437,7 @@ p {
   margin-bottom: 0.5rem
 }
 
-#evenements a, #filiere a {
+#evenements a{
   text-decoration: none;
   color: var(--brand);
   font-weight: 600;
@@ -396,6 +447,12 @@ p {
   border-radius: 8px
 }
 
+#evenements a:hover, #evenements a:focus {
+  background: var(--brand);
+  color: var(--surface);
+  outline: none
+}
+
 .all-events {
   text-decoration: none;
   color: var(--bg);
@@ -403,10 +460,16 @@ p {
   font-weight: 600;
   font-size: 1.1rem;
   border: 2px solid var(--brand);
-  padding: 0.45rem 0.75rem;
+  padding: 0.75rem 0.75rem;
   text-align: center;
   width: fit-content;
   margin-bottom: 20px;
+}
+
+.all-events:hover, .all-events:focus {
+  background: var(--title);
+  border-color: var(--title);
+  outline: none
 }
 
 @media (max-width:699px) {
@@ -417,10 +480,6 @@ p {
   .cards-grid {
     grid-template-columns: 1fr
   }
-
-  header nav ul {
-    flex-wrap: wrap
-  }
 }
 
 @media (min-width:700px) {
@@ -430,7 +489,7 @@ p {
   }
 
   .filiere-grid {
-    gap: 1rem
+    gap: 2.7rem
   }
 
   .banner .container {

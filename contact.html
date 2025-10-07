@@ -1,58 +1,47 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Contact — Sophia Antipolis</title>
-    <meta name="description" content="Formulaire de contact Sophia Antipolis." />
-    <link rel="stylesheet" href="css/index.css" />
-  </head>
-  <body>
-    <a class="skip-link" href="#main-content">Passer au contenu</a>
-    <header role="banner" class="container header-inner">
-      <a class="brand" href="index.html">Sophia Antipolis</a>
-      <nav role="navigation" aria-label="Navigation principale">
-        <ul class="main-nav">
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="article.html">Articles</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contactez-nous</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" type="image/png" href="favicon.png">
+    </head>
+    <body>
+        <header role="banner">
+            <a href="#contenu" class="skip-link">Aller au contenu principal</a>
+            <a href="index.html">
+                <img src="https://www.sophia-antipolis.fr/wp-content/themes/symisa/dist/images/sophia-antipolis-logo-white-2019.svg" alt="Sophia Antipolis" class="logo">
+            </a>
+            <nav aria-label="Menu principal">
+                <ul class="nav-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="article.html">Notre engagement accessibilité</a></li>
+                    <li><a href="contact.html" class="active" aria-current="page">Nous contacter</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <main id="main-content" tabindex="-1">
-      <h1>Contactez-nous</h1>
+        <main>
+            <h1>Contactez-nous</h1>
+            <p>Pas encore fait</p>
+        </main>
+        
+        <footer>
+            <nav aria-label="Navigation secondaire">
+                <ul class="footer-links">
+                    <li><a href="mentions-legales.html">Mentions légales</a></li>
+                    <li><a href="politique-confidentialite.html">Politique de confidentialité</a></li>
+                    <li><a href="accessibilite.html">Accessibilité</a></li>
+                </ul>
+            </nav>
 
-      <form action="#" method="post" novalidate aria-describedby="form-desc">
-        <p id="form-desc">Les champs marqués d'un astérisque (*) sont obligatoires.</p>
+            <address>
+                Contact : <a href="mailto:contact@sophia-antipolis.fr">contact@sophia-antipolis.fr</a><br>
+                Sophia Antipolis, France
+            </address>
 
-        <fieldset>
-          <legend>Vos coordonnées</legend>
-
-          <label for="name">Nom *</label>
-          <input id="name" name="name" type="text" required />
-
-          <label for="email">Email *</label>
-          <input id="email" name="email" type="email" required />
-        </fieldset>
-
-        <fieldset>
-          <legend>Message</legend>
-          <label for="message">Message *</label>
-          <textarea id="message" name="message" rows="6" required></textarea>
-        </fieldset>
-
-        <p>
-          <button type="submit">Envoyer</button>
-        </p>
-
-        <section aria-live="polite" class="form-messages" aria-atomic="true"></section>
-      </form>
-
-    </main>
-
-    <footer role="contentinfo" class="container">
-      <p>&copy; <time datetime="2025">2025</time> Sophia Antipolis</p>
-    </footer>
-  </body>
+            <p>&copy; 2025 Sophia Antipolis. Tous droits réservés.</p>
+        </footer>
+    </body>
 </html>

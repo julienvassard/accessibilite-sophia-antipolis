@@ -7,8 +7,26 @@
     <meta name="description"
       content="Découvrez Sophia Antipolis, le premier technopole d'Europe, ses entreprises, ses événements et ses services." />
     <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <header role="banner">
+      <a href="#contenu" class="skip-link">Aller au contenu principal</a>
+      <a href="index.html">
+        <img
+          src="https://www.sophia-antipolis.fr/wp-content/themes/symisa/dist/images/sophia-antipolis-logo-white-2019.svg"
+          alt="Sophia Antipolis" class="logo">
+      </a>
+      <nav aria-label="Menu principal">
+        <ul class="nav-links">
+          <li><a href="index.html" class="active"
+              aria-current="page">Accueil</a></li>
+          <li><a href="article.html">Notre engagement accessibilité</a></li>
+          <li><a href="contact.html">Nous
+              contacter</a></li>
+        </ul>
+      </nav>
+    </header>
     <main class="container">
       <!-- Section image principale -->
       <section class="banner" role="banner">
@@ -45,9 +63,8 @@
           <figure>
             <img src="images/technopole.png" alt="Vue du site technopolitain" />
           </figure>
-          <header>
-            <h2>La technopole</h2>
-          </header>
+          <h2>La technopole</h2>
+
           <p>
             Sophia Antipolis est la première Technopole d’Europe, située dans un
             environnement naturel unique. Elle rassemble des entreprises, des
@@ -64,9 +81,8 @@
             <img src="images/durable.jpg"
               alt="Quartier durable de Sophia Antipolis" />
           </figure>
-          <header>
-            <h2>L'Aménagement durable</h2>
-          </header>
+          <h2>L'Aménagement durable</h2>
+
           <p>
             Engagée dans une démarche de développement durable, Sophia Antipolis
             met en œuvre des infrastructures respectueuses de l’environnement.
@@ -83,9 +99,8 @@
             <img src="images/ecosysteme.jpg"
               alt="Chercheurs et entreprises en collaboration" />
           </figure>
-          <header>
-            <h2>Écosystème</h2>
-          </header>
+          <h2>Écosystème</h2>
+
           <p>
             Sophia Antipolis est un écosystème dynamique qui réunit une
             multitude d’acteurs issus de divers secteurs. Avec des universités,
@@ -101,9 +116,8 @@
             <img src="images/study.jpg"
               alt="Chercheurs et entreprises en collaboration" />
           </figure>
-          <header>
-            <h2>Travailler et étudier</h2>
-          </header>
+          <h2>Travailler et étudier</h2>
+
           <p>
 
             Sophia Antipolis offre un cadre exceptionnel pour les talents de
@@ -120,9 +134,8 @@
             <img src="images/pole.jpg"
               alt="Chercheurs et entreprises en collaboration" />
           </figure>
-          <header>
-            <h2>Le business Pole</h2>
-          </header>
+          <h2>Le business Pole</h2>
+
           <p>
             Sophia Antipolis se distingue par ses axes d’expertise dans des
             domaines de pointe tels que la cybersécurité, la santé, et la
@@ -139,9 +152,8 @@
             <img src="images/fondation.jpg"
               alt="Chercheurs et entreprises en collaboration" />
           </figure>
-          <header>
-            <h2>La fondation Sophia Antipolis</h2>
-          </header>
+          <h2>La fondation Sophia Antipolis</h2>
+
           <p>
             La Fondation Sophia Antipolis est reconnue d’utilité publique et
             joue un rôle clé dans la promotion de l’innovation et du
@@ -216,33 +228,84 @@
       <!-- Focus sur les filières -->
       <section id="filiere" aria-labelledby="filiere-titre">
         <h1 class="titre" id="filiere-titre">Focus sur les filières</h1>
-        <section class="filiere-grid">
-          <article class="filiere-card">
-            <figure>
-              <img src="images/ia.jpg"
-                alt="Illustration intelligence artificielle" />
-              <figcaption>Intelligence Artificielle</figcaption>
-            </figure>
-            <h3>Intelligence Artificielle</h3>
-            <a href="#">En savoir plus</a>
-          </article>
-          <article class="filiere-card">
-            <figure>
-              <img src="images/cyber.jpg" alt="Illustration cybersécurité" />
-              <figcaption>Cybersécurité</figcaption>
-            </figure>
-            <h3>Cybersécurité</h3>
-            <a href="#">En savoir plus</a>
-          </article>
-          <article class="filiere-card">
-            <figure>
-              <img src="images/sante.jpg"
-                alt="Illustration santé et biotechnologie" />
-              <figcaption>Santé et Biotech</figcaption>
-            </figure>
-            <h3>Santé et Biotech</h3>
-            <a href="#">En savoir plus</a>
-          </article>
+        <section class="filiere-carousel">
+          <button class="carousel-btn prev" aria-label="Précédent"
+            type="button">‹</button>
+          <section class="filiere-grid" role="list">
+            <a class="filiere-link" role="listitem" href="#">
+              <article class="filiere-card">
+                <figure>
+                  <img src="images/filiere-ia.jpg"
+                    alt="Illustration intelligence artificielle" />
+                </figure>
+                <h3>Intelligence Artificielle</h3>
+              </article>
+            </a>
+            <a class="filiere-link" role="listitem" href="#">
+              <article class="filiere-card">
+                <figure>
+                  <img src="images/cybersecu.jpg"
+                    alt="Illustration cybersécurité" />
+                </figure>
+                <h3>Cybersécurité</h3>
+              </article>
+            </a>
+            <a class="filiere-link" role="listitem" href="#">
+              <article class="filiere-card">
+                <figure>
+                  <img src="images/sante.jpg"
+                    alt="Illustration santé et biotechnologie" />
+                </figure>
+                <h3>Santé et Biotech</h3>
+              </article>
+            </a>
+            <a class="filiere-link" role="listitem" href="#">
+              <article class="filiere-card">
+                <figure>
+                  <img src="images/auto.jpg"
+                    alt="Illustration santé et biotechnologie" />
+                </figure>
+                <h3>Automotive et Mobilité</h3>
+              </article>
+            </a>
+            <a class="filiere-link" role="listitem" href="#">
+              <article class="filiere-card">
+                <figure>
+                  <img src="images/tic.jpg"
+                    alt="Illustration santé et biotechnologie" />
+                </figure>
+                <h3>TIC</h3>
+              </article>
+            </a>
+            <a class="filiere-link" role="listitem" href="#">
+              <article class="filiere-card">
+                <figure>
+                  <img src="images/newspace.jpg"
+                    alt="Illustration santé et biotechnologie" />
+                </figure>
+                <h3>Newspace</h3>
+              </article>
+            </a>
+            <a class="filiere-link" role="listitem" href="#">
+              <article class="filiere-card">
+                <figure>
+                  <img src="images/yachting.jpg"
+                    alt="Illustration santé et biotechnologie" />
+                </figure>
+                <h3>Yatching et Bluetech</h3>
+              </article>
+            </a>
+            <a class="filiere-link" role="listitem" href="#">
+              <article class="filiere-card">
+                <figure>
+                  <img src="images/design.jpg" alt="Illustration design" />
+                </figure>
+                <h3>Design</h3>
+              </article>
+            </a>
+          </section>
+          <button class="carousel-btn next" aria-label="Suivant"
+            type="button">›</button>
         </section>
       </section>
 
@@ -254,9 +317,8 @@
             <figure>
               <img src="images/congre.png" alt="Logo IASP" />
             </figure>
-            <header>
-              <h2>Congrès IASP 2026</h2>
-            </header>
+            <h2>Congrès IASP 2026</h2>
+
             <p>
               En Septembre 2026, Sophia Antipolis accueillera le congrès de
               l’IASP
@@ -275,9 +337,8 @@
               <img src="images/equipe-Technopole.jpg"
                 alt="L'équipe de la technopole'" />
             </figure>
-            <header>
-              <h2>L’équipe de la Technopole</h2>
-            </header>
+            <h2>L’équipe de la Technopole</h2>
+
             <p>
               Plongez au cours de l’expertise et de l’innovation avec notre
               équipe
@@ -293,5 +354,24 @@
         <a class="all-events" href="#">Tous les évènements</a>
       </section>
     </main>
+    <footer>
+      <nav aria-label="Navigation secondaire">
+        <ul class="footer-links">
+          <li><a href="mentions-legales.html">Mentions légales</a></li>
+          <li><a href="politique-confidentialite.html">Politique de
+              confidentialité</a></li>
+          <li><a href="accessibilite.html">Accessibilité</a></li>
+        </ul>
+      </nav>
+
+      <address>
+        Contact : <a
+          href="mailto:contact@sophia-antipolis.fr">contact@sophia-antipolis.fr</a><br>
+        Sophia Antipolis, France
+      </address>
+
+      <p>&copy; 2025 Sophia Antipolis. Tous droits réservés.</p>
+    </footer>
+    <script src="js/carousel.js" defer></script>
   </body>
 </html>
