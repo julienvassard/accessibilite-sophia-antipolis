@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Article — Sophia Antipolis</title>
+    <meta name="description" content="Article exemple sur Sophia Antipolis." />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Passer au contenu</a>
+    <header role="banner" class="container header-inner">
+      <a class="brand" href="index.html">Sophia Antipolis</a>
+      <nav role="navigation" aria-label="Navigation principale">
+        <ul class="main-nav">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="article.html">Articles</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+      <nav aria-label="Fil d'Ariane" class="breadcrumb">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li aria-current="page">Article</li>
+        </ul>
+      </nav>
+
+      <article aria-labelledby="article-title">
+        <header>
+          <h1 id="article-title">Titre de l'article exemple</h1>
+          <p class="meta">Par <strong>Équipe Sophia</strong> — <time datetime="2025-05-20">20 mai 2025</time></p>
+        </header>
+
+        <figure>
+          <img src="images/cyber.jpg" alt="Illustration du cyber campus" />
+          <figcaption>Le cyber campus de Sophia Antipolis</figcaption>
+        </figure>
+
+        <p>
+          Contenu de l'article. Ce paragraphe est un exemple pour montrer une structure sémantique et accessible.
+        </p>
+
+        <nav aria-label="Navigation article">
+          <a href="index.html">Retour à l'accueil</a>
+        </nav>
+      </article>
+    </main>
+
+    <footer role="contentinfo" class="container">
+      <p>&copy; <time datetime="2025">2025</time> Sophia Antipolis</p>
+    </footer>
+  </body>
+</html>
