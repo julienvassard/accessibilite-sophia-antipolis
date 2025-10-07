@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 /* Header */
 header {
   background-color: rgb(40, 53, 131);
@@ -15,6 +16,20 @@ header {
 header .logo {
   height: 60px;
   width: auto;
+}
+
+header a:has(.logo) {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.15);
+  color: #fff;
+}
+
+header a:has(.logo):focus,
+header a:has(.logo):focus-visible {
+  outline: 3px solid #eea400;
+  outline-offset: 3px;
 }
 
 /* Menu */

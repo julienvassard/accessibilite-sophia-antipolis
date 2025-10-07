@@ -11,7 +11,7 @@
   </head>
   <body>
     <header role="banner">
-      <a href="#contenu" class="skip-link">Aller au contenu principal</a>
+      <a href="#technopole" class="skip-link">Aller au contenu principal</a>
       <a href="index.html">
         <img
           src="https://www.sophia-antipolis.fr/wp-content/themes/symisa/dist/images/sophia-antipolis-logo-white-2019.svg"
@@ -19,7 +19,7 @@
       </a>
       <nav aria-label="Menu principal">
         <ul class="nav-links">
-          <li><a href="index.html" class="active"
+          <li><a href class="active"
               aria-current="page">Accueil</a></li>
           <li><a href="article.html">Notre engagement accessibilité</a></li>
           <li><a href="contact.html">Nous
@@ -38,8 +38,8 @@
       </section>
 
       <!-- Chiffres clés -->
-      <section class="chiffres-cles" aria-labelledby="chiffres-cles">
-        <h1 class="titre">Sophia Antipolis, première
+      <section class="chiffres-cles" aria-label="chiffres-cles">
+        <h1 class="titre" id="chiffres-cles">Sophia Antipolis, première
           technopole
           d'Europe</h1>
         <ul class="stats">
@@ -55,120 +55,132 @@
       </section>
 
       <!-- Cartes technopole -->
-      <h1 class="titre" id="titre-technopole">Plongez à la découverte d'un
-        site unique</h1>
-      <section id="technopole" class="cards-grid"
+      <section
         aria-label="Présentation de la technopole">
-        <article class="card" tabindex="0">
-          <figure>
-            <img src="images/technopole.png" alt="Vue du site technopolitain" />
-          </figure>
-          <h2>La technopole</h2>
+        <h1 class="titre" id="titre-technopole">Plongez à la découverte d'un
+          site unique</h1>
+        <section id="technopole" class="cards-grid">
+          <article class="card" tabindex="0">
+            <figure>
+              <img src="images/technopole.png"
+                alt="Vue du site technopolitain" />
+            </figure>
+            <h2>La technopole</h2>
 
-          <p>
-            Sophia Antipolis est la première Technopole d’Europe, située dans un
-            environnement naturel unique. Elle rassemble des entreprises, des
-            instituts de recherche, et des établissements d’enseignement
-            supérieur. Pour en savoir plus sur son histoire, sa vision, et son
-            rôle stratégique, explorez notre page de présentation dédiée à la
-            Technopole Sophia Antipolis.
-          </p>
-          <a href="#">En savoir plus</a>
-        </article>
+            <p>
+              Sophia Antipolis est la première Technopole d’Europe, située dans
+              un
+              environnement naturel unique. Elle rassemble des entreprises, des
+              instituts de recherche, et des établissements d’enseignement
+              supérieur. Pour en savoir plus sur son histoire, sa vision, et son
+              rôle stratégique, explorez notre page de présentation dédiée à la
+              Technopole Sophia Antipolis.
+            </p>
+            <a href="#">En savoir plus</a>
+          </article>
 
-        <article class="card" id="amenagement" tabindex="0">
-          <figure>
-            <img src="images/durable.jpg"
-              alt="Quartier durable de Sophia Antipolis" />
-          </figure>
-          <h2>L'Aménagement durable</h2>
+          <article class="card" id="amenagement" tabindex="0">
+            <figure>
+              <img src="images/durable.jpg"
+                alt="Quartier durable de Sophia Antipolis" />
+            </figure>
+            <h2>L'Aménagement durable</h2>
 
-          <p>
-            Engagée dans une démarche de développement durable, Sophia Antipolis
-            met en œuvre des infrastructures respectueuses de l’environnement.
-            Grâce à une planification réfléchie, elle intègre des solutions
-            innovantes pour réduire l’impact environnemental et promouvoir un
-            cadre de vie de qualité. Découvrez comment nous œuvrons pour un
-            avenir durable sur notre page dédiée.
-          </p>
-          <a href="#">En savoir plus</a>
-        </article>
+            <p>
+              Engagée dans une démarche de développement durable, Sophia
+              Antipolis
+              met en œuvre des infrastructures respectueuses de l’environnement.
+              Grâce à une planification réfléchie, elle intègre des solutions
+              innovantes pour réduire l’impact environnemental et promouvoir un
+              cadre de vie de qualité. Découvrez comment nous œuvrons pour un
+              avenir durable sur notre page dédiée.
+            </p>
+            <a href="#">En savoir plus</a>
+          </article>
 
-        <article class="card" id="ecosysteme" tabindex="0">
-          <figure>
-            <img src="images/ecosysteme.jpg"
-              alt="Chercheurs et entreprises en collaboration" />
-          </figure>
-          <h2>Écosystème</h2>
+          <article class="card" id="ecosysteme" tabindex="0">
+            <figure>
+              <img src="images/ecosysteme.jpg"
+                alt="Vue sur l'écosystème de Sophia Antipolis" />
+            </figure>
+            <h2>Écosystème</h2>
 
-          <p>
-            Sophia Antipolis est un écosystème dynamique qui réunit une
-            multitude d’acteurs issus de divers secteurs. Avec des universités,
-            des laboratoires de recherche, des startups innovantes et des
-            grandes entreprises internationales, elle favorise la collaboration
-            et le partage de connaissances. Découvrez comment cet écosystème
-            vibrant stimule l’innovation dans notre page dédiée.
-          </p>
-          <a href="#">En savoir plus</a>
-        </article>
-        <article class="card" id="ecosysteme-travailler" tabindex="0">
-          <figure>
-            <img src="images/study.jpg"
-              alt="Chercheurs et entreprises en collaboration" />
-          </figure>
-          <h2>Travailler et étudier</h2>
+            <p>
+              Sophia Antipolis est un écosystème dynamique qui réunit une
+              multitude d’acteurs issus de divers secteurs. Avec des
+              universités,
+              des laboratoires de recherche, des startups innovantes et des
+              grandes entreprises internationales, elle favorise la
+              collaboration
+              et le partage de connaissances. Découvrez comment cet écosystème
+              vibrant stimule l’innovation dans notre page dédiée.
+            </p>
+            <a href="#">En savoir plus</a>
+          </article>
+          <article class="card" id="ecosysteme-travailler" tabindex="0">
+            <figure>
+              <img src="images/study.jpg"
+                alt="Étudiants travaillant ensemble dans un espace de coworking" />
+            </figure>
+            <h2>Travailler et étudier</h2>
 
-          <p>
+            <p>
 
-            Sophia Antipolis offre un cadre exceptionnel pour les talents de
-            tous horizons. Reconnu pour son dynamisme et son esprit collaboratif
-            stimulant, la Technopole offre de nombreuses opportunités d’emplois
-            et un large réseau professionnel dans divers secteurs. Découvrez les
-            informations détaillées sur la communauté sophipolitaine et déposez
-            votre candidature.
-          </p>
-          <a href="#">En savoir plus</a>
-        </article>
-        <article class="card" id="ecosysteme-business" tabindex="0">
-          <figure>
-            <img src="images/pole.jpg"
-              alt="Chercheurs et entreprises en collaboration" />
-          </figure>
-          <h2>Le business Pole</h2>
+              Sophia Antipolis offre un cadre exceptionnel pour les talents de
+              tous horizons. Reconnu pour son dynamisme et son esprit
+              collaboratif
+              stimulant, la Technopole offre de nombreuses opportunités
+              d’emplois
+              et un large réseau professionnel dans divers secteurs. Découvrez
+              les
+              informations détaillées sur la communauté sophipolitaine et
+              déposez
+              votre candidature.
+            </p>
+            <a href="#">En savoir plus</a>
+          </article>
+          <article class="card" id="ecosysteme-business" tabindex="0">
+            <figure>
+              <img src="images/pole.jpg"
+                alt="Bâtiment du Business Pole à Sophia Antipolis" />
+            </figure>
+            <h2>Le business Pole</h2>
 
-          <p>
-            Sophia Antipolis se distingue par ses axes d’expertise dans des
-            domaines de pointe tels que la cybersécurité, la santé, et la
-            biotechnologie. Ce vivier d’acteurs experts contribue à renforcer
-            l’innovation technologique et à développer des solutions innovantes.
-            Pour explorer ces secteurs et découvrir les opportunités qu’ils
-            offrent, consultez notre page sur les filières spécialisées de la
-            Technopole.
-          </p>
-          <a href="#">En savoir plus</a>
-        </article>
-        <article class="card" id="ecosysteme-fondation" tabindex="0">
-          <figure>
-            <img src="images/fondation.jpg"
-              alt="Chercheurs et entreprises en collaboration" />
-          </figure>
-          <h2>La fondation Sophia Antipolis</h2>
+            <p>
+              Sophia Antipolis se distingue par ses axes d’expertise dans des
+              domaines de pointe tels que la cybersécurité, la santé, et la
+              biotechnologie. Ce vivier d’acteurs experts contribue à renforcer
+              l’innovation technologique et à développer des solutions
+              innovantes.
+              Pour explorer ces secteurs et découvrir les opportunités qu’ils
+              offrent, consultez notre page sur les filières spécialisées de la
+              Technopole.
+            </p>
+            <a href="#">En savoir plus</a>
+          </article>
+          <article class="card" id="ecosysteme-fondation" tabindex="0">
+            <figure>
+              <img src="images/fondation.jpg"
+                alt="Logo de la Fondation Sophia Antipolis" />
+            </figure>
+            <h2>La fondation Sophia Antipolis</h2>
 
-          <p>
-            La Fondation Sophia Antipolis est reconnue d’utilité publique et
-            joue un rôle clé dans la promotion de l’innovation et du
-            développement économique. En menant des missions d’intérêt général
-            en France et à l’international, elle soutient des projets
-            stratégiques et opérationnels. Pour en savoir plus sur ses
-            initiatives et son impact, visitez notre page consacrée à la
-            Fondation Sophia Antipolis.
-          </p>
-          <a href="#">En savoir plus</a>
-        </article>
+            <p>
+              La Fondation Sophia Antipolis est reconnue d’utilité publique et
+              joue un rôle clé dans la promotion de l’innovation et du
+              développement économique. En menant des missions d’intérêt général
+              en France et à l’international, elle soutient des projets
+              stratégiques et opérationnels. Pour en savoir plus sur ses
+              initiatives et son impact, visitez notre page consacrée à la
+              Fondation Sophia Antipolis.
+            </p>
+            <a href="#">En savoir plus</a>
+          </article>
+        </section>
       </section>
 
       <!-- Actualités -->
-      <section id="actualites" aria-labelledby="titre-actus">
+      <section id="actualites" aria-label="titre-actus">
         <section class="actus-alpha">
           <h1 class="titre">S'implanter ALPHA SOPHIA ANTIPOLIS</h1>
           <article>
@@ -194,30 +206,30 @@
             <li>
               <a href="#">
                 <figure>
-                  <img src="images/cyber.png" alt />
+                  <img src="images/cyber.png" alt="Image représenttant le cyber campus de Sophia Antipolis" />
                 </figure>
                 <time datetime="2025-05-20">20 mai 2025</time>
-                <h3>Le cyber Campus de Sophia Antipolis</h3>
+                <h2>Le cyber Campus de Sophia Antipolis</h2>
               </a>
             </li>
             <li>
               <a href="#">
                 <figure>
-                  <img src="images/campus-Amandiers.png" alt />
+                  <img src="images/campus-Amandiers.png" alt="Image représentant le campus des Amandiers à Sophia Antipolis" />
                 </figure>
                 <time datetime="2025-04-23">23 avril 2025</time>
-                <h3>Le Campus des Amandiers</h3>
+                <h2>Le Campus des Amandiers</h2>
               </a>
             </li>
             <li>
               <a href="#">
                 <figure>
-                  <img src="images/mipim.jpg" alt />
+                  <img src="images/mipim.jpg" alt="Image représentant le salon MIPIM" />
                 </figure>
                 <time datetime="2025-03-24">24 mars 2025</time>
-                <h3>
+                <h2>
                   Sophia Antipolis au MIPIM 2025 : Retour sur événement
-                </h3>
+                </h2>
               </a>
             </li>
           </ul>
@@ -226,7 +238,7 @@
       </section>
 
       <!-- Focus sur les filières -->
-      <section id="filiere" aria-labelledby="filiere-titre">
+      <section id="filiere" aria-label="filiere-titre">
         <h1 class="titre" id="filiere-titre">Focus sur les filières</h1>
         <section class="filiere-carousel">
           <button class="carousel-btn prev" aria-label="Précédent"
@@ -238,7 +250,7 @@
                   <img src="images/filiere-ia.jpg"
                     alt="Illustration intelligence artificielle" />
                 </figure>
-                <h3>Intelligence Artificielle</h3>
+                <h2>Intelligence Artificielle</h2>
               </article>
             </a>
             <a class="filiere-link" role="listitem" href="#">
@@ -247,7 +259,7 @@
                   <img src="images/cybersecu.jpg"
                     alt="Illustration cybersécurité" />
                 </figure>
-                <h3>Cybersécurité</h3>
+                <h2>Cybersécurité</h2>
               </article>
             </a>
             <a class="filiere-link" role="listitem" href="#">
@@ -256,43 +268,43 @@
                   <img src="images/sante.jpg"
                     alt="Illustration santé et biotechnologie" />
                 </figure>
-                <h3>Santé et Biotech</h3>
+                <h2>Santé et Biotech</h2>
               </article>
             </a>
             <a class="filiere-link" role="listitem" href="#">
               <article class="filiere-card">
                 <figure>
                   <img src="images/auto.jpg"
-                    alt="Illustration santé et biotechnologie" />
+                    alt="Illustration automotive et mobilité" />
                 </figure>
-                <h3>Automotive et Mobilité</h3>
+                <h2>Automotive et Mobilité</h2>
               </article>
             </a>
             <a class="filiere-link" role="listitem" href="#">
               <article class="filiere-card">
                 <figure>
                   <img src="images/tic.jpg"
-                    alt="Illustration santé et biotechnologie" />
+                    alt="Illustration technologies de l'information et de la communication" />
                 </figure>
-                <h3>TIC</h3>
+                <h2>TIC</h2>
               </article>
             </a>
             <a class="filiere-link" role="listitem" href="#">
               <article class="filiere-card">
                 <figure>
                   <img src="images/newspace.jpg"
-                    alt="Illustration santé et biotechnologie" />
+                    alt="Illustration Newspace" />
                 </figure>
-                <h3>Newspace</h3>
+                <h2>Newspace</h2>
               </article>
             </a>
             <a class="filiere-link" role="listitem" href="#">
               <article class="filiere-card">
                 <figure>
                   <img src="images/yachting.jpg"
-                    alt="Illustration santé et biotechnologie" />
+                    alt="Illustration yachting et bluetech" />
                 </figure>
-                <h3>Yatching et Bluetech</h3>
+                <h2>Yatching et Bluetech</h2>
               </article>
             </a>
             <a class="filiere-link" role="listitem" href="#">
@@ -300,7 +312,7 @@
                 <figure>
                   <img src="images/design.jpg" alt="Illustration design" />
                 </figure>
-                <h3>Design</h3>
+                <h2>Design</h2>
               </article>
             </a>
           </section>
