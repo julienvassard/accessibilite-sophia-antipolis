@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header {
+  background-color: rgb(40, 53, 131);
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+header .logo {
+  height: 60px;
+  width: auto;
+}
+
+header a:has(.logo) {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.15);
+  color: #fff;
+}
+
+header a:has(.logo):focus,
+header a:has(.logo):focus-visible {
+  outline: 3px solid #eea400;
+  outline-offset: 3px;
+}
+
+/* Menu */
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 2rem;
+}
+
+header nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav a:hover,
+header nav a:focus {
+  text-decoration: underline;
+}
+
+/* Lien actif */
+header nav a[aria-current="page"] {
+  border-bottom: 2px solid #ffffff;
+}
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background-color: #000;
+  color: #fff;
+  padding: 8px 12px;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Lien visible uniquement lorsqu’il est focus */
+.skip-link:focus {
+  top: 0;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* Liens dans le footer */
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer a:hover,
+footer a:focus {
+  text-decoration: underline;
+  outline: none;
+}
+
+/* Liste des liens */
+footer .footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* Address */
+footer address {
+  font-style: normal;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+/* Copyright */
+footer p {
+  margin: 0;
+}
