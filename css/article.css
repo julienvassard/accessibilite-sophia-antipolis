@@ -1,0 +1,119 @@
+@font-face {
+  font-family: 'Luciole';
+  src: url('fonts/Luciole-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Luciole';
+  src: url('fonts/Luciole-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Luciole';
+  src: url('fonts/Luciole-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Luciole';
+  src: url('fonts/Luciole-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+:root {
+  --content-width: 72ch;
+}
+
+body {
+  font-family: 'Luciole', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+}
+
+main#contenu {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.article {
+  max-width: var(--content-width);
+}
+
+.article header h1 {
+  font-size: 2rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.byline {
+  color: #666;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.article figure {
+  margin: 1rem 0;
+}
+
+.article img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.article h2 {
+  font-size: 1.25rem;
+  margin-top: 1.2rem;
+}
+
+.article p,
+.article ul {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.related {
+  background: #f7f9fb;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.related h2 {
+  margin-top: 0;
+}
+
+.related nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.related nav a {
+  color: var(--brand, #283583);
+  text-decoration: none;
+}
+
+.related nav a:hover,
+.related nav a:focus {
+  text-decoration: underline;
+}
+
+.article-footer {
+  margin-top: 2rem;
+  border-top: 1px solid #e6e6e6;
+  padding-top: 1rem;
+}
+
+@media (max-width: 899px) {
+  main#contenu { grid-template-columns: 1fr; }
+}
