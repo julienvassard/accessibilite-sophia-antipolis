@@ -56,6 +56,12 @@
                     <button type="submit">Envoyer</button>
                 </fieldset>
             </form>
+            <div id="success-message" class="visually-hidden" role="status" aria-live="polite" tabindex="-1">
+                Votre message a été envoyé avec succès. Merci de nous avoir contactés !
+            </div>
+            <div id="error-message" class="visually-hidden" role="alert" aria-live="assertive" tabindex="-1">
+                <strong>Le nom doit contenir plus d’un caractère. Veuillez le corriger.</strong>
+            </div>
         </main>
         
         <footer>
@@ -74,5 +80,31 @@
 
             <p>&copy; 2025 Sophia Antipolis. Tous droits réservés.</p>
         </footer>
+        <script>
+            const form = document.querySelector('form');
+            const successMessage = document.getElementById('success-message');
+            const errorMessage = document.getElementById('error-message');
+            const nomInput = document.getElementById('nom');
+
+            form.addEventListener('submit', function(e) {
+                e.preventDefault(); // Empêche l’envoi réel
+
+                // Réinitialise les messages
+                successMessage.classList.add('visually-hidden');
+                errorMessage.classList.add('visually-hidden');
+
+                // Vérifie le champ Nom
+                if (nomInput.value.trim().toLowerCase() === 'a') {
+                    errorMessage.classList.remove('visually-hidden');
+                    errorMessage.focus();
+                    return;
+                }
+
+                // Si tout est OK
+                successMessage.classList.remove('visually-hidden');
+                successMessage.focus();
+                form.reset();
+            });
+        </script>
     </body>
 </html>
