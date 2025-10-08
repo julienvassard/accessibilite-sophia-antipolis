@@ -85,6 +85,13 @@ header nav a:focus {
   text-decoration: underline;
 }
 
+header nav a:focus,
+header nav a:focus-visible {
+  outline: 3px solid orange;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
 /* Lien actif */
 header nav a[aria-current="page"] {
   border-bottom: 2px solid #ffffff;
@@ -125,7 +132,13 @@ footer a {
 footer a:hover,
 footer a:focus {
   text-decoration: underline;
-  outline: none;
+}
+
+footer a:focus,
+footer a:focus-visible {
+  outline: 3px solid orange;
+  outline-offset: 3px;
+  border-radius: 4px;
 }
 
 /* Liste des liens */
@@ -149,3 +162,4 @@ footer address {
 footer p {
   margin: 0;
 }
+
