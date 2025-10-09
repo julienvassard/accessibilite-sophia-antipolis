@@ -29,11 +29,15 @@ main#contenu {
     box-shadow: 0 1px 2px rgba(6, 18, 40, 0.04);
 }
 
-.article header h1 {
+.article h1 {
     color: var(--card-bg);
     font-weight: 700;
     margin: 0 0 0.5rem 0;
     font-size: 1.6rem;
+    background: var(--accent);
+    padding: 1.5rem 2.5rem;
+    text-align: center;
+    font-weight: 900;
 }
 
 .article figure {
@@ -72,7 +76,7 @@ main#contenu {
     border: 1px solid rgba(6, 18, 40, 0.04);
 }
 
-.related h2 {
+.related h2, .related li {
     margin-top: 0;
     color: var(--card-bg);
 }
@@ -99,11 +103,11 @@ main#contenu {
     padding-top: 1rem;
 }
 
-.article-footer p{
+.article-footer p {
     color: var(--card-bg);
 }
 
-.article-footer a{
+.article-footer a {
     text-decoration: underline;
     font-weight: 600;
 }
@@ -115,7 +119,7 @@ main#contenu {
 }
 
 @media (min-width: 700px) {
-    .article header h1 {
+    .article h1 {
         font-size: 2.25rem;
     }
 
@@ -125,7 +129,7 @@ main#contenu {
 }
 
 @media (min-width: 1100px) {
-    .article header h1 {
+    .article h1 {
         font-size: 2.75rem;
     }
 }

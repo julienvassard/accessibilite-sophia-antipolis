@@ -10,14 +10,14 @@
   <body>
     <header role="banner">
       <a href="#first-content" class="skip-link">Aller au contenu principal</a>
-      <a href="/">
+      <a href="index.html">
         <img
-          src="https://www.sophia-antipolis.fr/wp-content/themes/symisa/dist/images/sophia-antipolis-logo-white-2019.svg"
+          src="images/logo.svg"
           alt="Sophia Antipolis" class="logo">
       </a>
       <nav aria-label="Menu principal">
         <ul class="nav-links">
-          <li><a href="" class="active"
+          <li><a href="index.html" class="active"
               aria-current="page">Accueil</a></li>
           <li><a href="article.html">Notre engagement accessibilité</a></li>
           <li><a href="contact.html">Nous
@@ -25,46 +25,44 @@
         </ul>
       </nav>
     </header>
+
     <main class="container" id="contenu">
       <!-- Section image principale -->
-      <section class="banner" role="banner" id="first-content">
-        <h1 class="titre" tabindex="0">Sophia Antipolis</h1>
+      <section class="banner" id="first-content" aria-labelledby="main-title">
+        <h1 class="titre" id="main-title">Sophia Antipolis</h1>
         <figure>
-          <img src="images/sophia-antipolis.jpg" class="sophia-image" alt
-            aria-hidden="true" />
+          <img src="images/sophia-antipolis.jpg" class="sophia-image"
+            alt="Vue panoramique de Sophia Antipolis, première technopole d'Europe" />
         </figure>
       </section>
 
       <!-- Chiffres clés -->
-      <section class="chiffres-cles" aria-label="chiffres-cles">
-        <h2 class="titre" id="chiffres-cles" tabindex="0">Sophia Antipolis,
+      <section class="chiffres-cles" aria-labelledby="chiffres-cles">
+        <h2 class="titre" id="chiffres-cles">Sophia Antipolis,
           première
           technopole
           d'Europe</h2>
-        <a href="#technopole-content" class="skip-link">Aller à la prochaine
-          section</a>
-        <ul class="stats">
-          <li tabindex="0"><strong>2 650</strong> entreprises</li>
-          <li tabindex="0"><strong>44 500</strong> salariés</li>
-          <li tabindex="0"><strong>80</strong> nationalités</li>
-          <li tabindex="0"><strong>5 500</strong> chercheurs</li>
-          <li tabindex="0"><strong>7 500</strong> étudiants</li>
-          <li tabindex="0"><strong>8</strong> Mds de CA</li>
-          <li tabindex="0"><strong>2 400</strong> hectares</li>
-          <li tabindex="0"><strong>90</strong> % d’espaces végétalisés</li>
+        <ul class="stats" aria-label="8 statistiques clés">
+          <li><strong>2 650</strong> entreprises</li>
+          <li><strong>44 500</strong> salariés</li>
+          <li><strong>80</strong> nationalités</li>
+          <li><strong>5 500</strong> chercheurs</li>
+          <li><strong>7 500</strong> étudiants</li>
+          <li><strong>8</strong> milliards de chiffre d'affaires</li>
+          <li><strong>2 400</strong> hectares</li>
+          <li><strong>90</strong> pourcent d’espaces végétalisés</li>
         </ul>
       </section>
 
       <!-- Cartes technopole -->
-      <section
-        aria-label="Présentation de la technopole" id="technopole-content">
-        <h2 class="titre" id="titre-technopole" tabindex="0">Plongez à la
+      <section id="technopole-content" role="region"
+        aria-labelledby="titre-technopole">
+        <h2 class="titre" id="titre-technopole">Plongez à la
           découverte d'un
           site unique</h2>
-        <a href="#actualites" class="skip-link">Aller à la prochaine
-          section</a>
-        <section id="technopole" class="cards-grid">
-          <article class="card" tabindex="0">
+        <ul id="technopole" class="cards-grid"
+          aria-label="6 domaines d'activité">
+          <li class="card">
             <figure>
               <img src="images/technopole.png"
                 alt="Vue du site technopolitain" />
@@ -80,11 +78,11 @@
               Technopole Sophia Antipolis.
             </p>
             <a href="#"
-              aria-label="Découvrir l'histoire et la vision de la technopole">En
-              savoir plus</a>
-          </article>
+              aria-label="Découvrir l'histoire et la vision de la technopole">Découvrir
+              l'histoire et la vision de la technopole</a>
+          </li>
 
-          <article class="card" id="amenagement" tabindex="0">
+          <li class="card" id="amenagement">
             <figure>
               <img src="images/durable.jpg"
                 alt="Quartier durable de Sophia Antipolis" />
@@ -101,11 +99,11 @@
               avenir durable sur notre page dédiée.
             </p>
             <a href="#"
-              aria-label="Exploré les initiatives de développement durable">En
-              savoir plus</a>
-          </article>
+              aria-label="Explorez les initiatives de développement durable">Explorer
+              les initiatives de développement durable</a>
+          </li>
 
-          <article class="card" id="ecosysteme" tabindex="0">
+          <li class="card" id="ecosysteme">
             <figure>
               <img src="images/ecosysteme.jpg"
                 alt="Vue sur l'écosystème de Sophia Antipolis" />
@@ -122,11 +120,11 @@
               vibrant stimule l’innovation dans notre page dédiée.
             </p>
             <a href="#"
-              aria-label="Découvrir les acteurs de l'écosystème">En
-              savoir plus</a>
-          </article>
+              aria-label="Découvrir les acteurs de l'écosystème">Découvrir les
+              acteurs de l'écosystème</a>
+          </li>
 
-          <article class="card" id="ecosysteme-travailler" tabindex="0">
+          <li class="card" id="ecosysteme-travailler">
             <figure>
               <img src="images/study.jpg"
                 alt="Étudiants travaillant ensemble dans un espace de coworking" />
@@ -147,11 +145,11 @@
               votre candidature.
             </p>
             <a href="#"
-              aria-label="Consulter les opportunités profesionnelles et académiques">En
-              savoir plus</a>
-          </article>
+              aria-label="Consulter les opportunités profesionnelles et académiques">Consulter
+              les opportunités profesionnelles et académiques</a>
+          </li>
 
-          <article class="card" id="ecosysteme-business" tabindex="0">
+          <li class="card" id="ecosysteme-business">
             <figure>
               <img src="images/pole.jpg"
                 alt="Bâtiment du Business Pole à Sophia Antipolis" />
@@ -169,11 +167,11 @@
               Technopole.
             </p>
             <a href="#"
-              aria-label="Exploré les filières d'expertise du business pole">En
-              savoir plus</a>
-          </article>
+              aria-label="Explorez les filières d'expertise du business pole">Explorer
+              les filières d'expertise du business pole</a>
+          </li>
 
-          <article class="card" id="ecosysteme-fondation" tabindex="0">
+          <li class="card" id="ecosysteme-fondation">
             <figure>
               <img src="images/fondation.jpg"
                 alt="Logo de la Fondation Sophia Antipolis" />
@@ -191,26 +189,24 @@
             </p>
             <a href="#"
               aria-label="En savoir plus sur les missions de la fondation">En
-              savoir plus</a>
-          </article>
-        </section>
+              savoir plus sur les missions de la fondation</a>
+          </li>
+        </ul>
       </section>
 
       <!-- Actualités -->
-      <section id="all-actus" aria-label="titre-actus">
-        <h2 class="titre" tabindex="0">Actualités</h2>
-        <a href="#filiere" class="skip-link">Aller à la prochaine
-          section</a>
-        <section id="actualites">
-          <section class="actus-alpha">
-            <h3 class="titre" tabindex="0">S'implanter ALPHA SOPHIA
+      <section id="all-actus" role="region" aria-labelledby="titre-actualites">
+        <h2 class="titre" id="titre-actualites">Actualités</h2>
+        <div id="actualites">
+          <div class="actus-alpha">
+            <h3>S'implanter ALPHA SOPHIA
               ANTIPOLIS</h3>
             <article>
               <figure>
                 <img src="images/alpha-sophia.png"
                   alt="Logo Alpha Sophia Antipolis" />
               </figure>
-              <p tabindex="0">
+              <p>
                 Alpha Sophia Antipolis est le centre d’affaires de la
                 technopole,
                 offrant des espaces de travail flexibles et adaptés aux besoins
@@ -224,10 +220,10 @@
                 aria-label="En savoir plus sur Alpha Sophia Antipolis">En savoir
                 plus sur Alpha Sophia Antipolis</a>
             </article>
-          </section>
-          <section>
-            <h3 class="titre" id="titre-actus" tabindex="0">Dernières actualités</h3>
-            <ul class="actus-list">
+          </div>
+          <div>
+            <h3 id="titre-actus">Dernières actualités</h3>
+            <ul class="actus-list" aria-label="3 dernières actualités">
               <li>
                 <a href="#"
                   aria-label="Lire l'actualité : Le cyber Campus de Sophia Antipolis">
@@ -263,117 +259,139 @@
               </li>
             </ul>
             <a class="actu-url" href="#"
-              aria-label="Voir toutes les actualités de Sophia Antipolis">Toutes
-              les actualités</a>
-          </section>
-        </section>
+              aria-label="Voir toutes les actualités de Sophia Antipolis">Voir
+              toutes les actualités de Sophia Antipolis</a>
+          </div>
+        </div>
       </section>
 
       <!-- Focus sur les filières -->
-      <section id="filiere" aria-label="filiere-titre">
-        <h2 class="titre" id="filiere-titre" tabindex="0">Focus sur les
+      <section id="filiere" role="region" aria-labelledby="filiere-titre">
+        <h2 class="titre" id="filiere-titre">Focus sur les
           filières</h2>
-        <a href="#all-evenements" class="skip-link">Aller à la prochaine
-          section</a>
 
-        <section class="filiere-carousel">
-          <button class="carousel-btn prev" aria-label="Précédent"
+        <div class="filiere-carousel" role="group"
+          aria-label="Carrousel des filières d'expertise">
+          <button class="carousel-btn prev"
+            aria-label="Afficher les filières précédentes"
+            aria-controls="filiere-grid"
             type="button">‹</button>
-          <section class="filiere-grid" role="list">
-            <a class="filiere-link" role="listitem" href="#"
-              aria-label="Explorer la filière Intelligence Artificielle">
-              <article class="filiere-card">
-                <figure>
-                  <img src="images/filiere-ia.jpg"
-                    alt="Illustration intelligence artificielle" />
-                </figure>
-                <h3>Intelligence Artificielle</h3>
-              </article>
-            </a>
-            <a class="filiere-link" role="listitem" href="#"
-              aria-label="Explorer la filière Cybersécurité">
-              <article class="filiere-card">
-                <figure>
-                  <img src="images/cybersecu.jpg"
-                    alt="Illustration cybersécurité" />
-                </figure>
-                <h3>Cybersécurité</h3>
-              </article>
-            </a>
-            <a class="filiere-link" role="listitem" href="#"
-              aria-label="Explorer la filière Santé et Biotech">
-              <article class="filiere-card">
-                <figure>
-                  <img src="images/sante.jpg"
-                    alt="Illustration santé et biotechnologie" />
-                </figure>
-                <h3>Santé et Biotech</h3>
-              </article>
-            </a>
-            <a class="filiere-link" role="listitem" href="#"
-              aria-label="Explorer la filière Automotive et Mobilité">
-              <article class="filiere-card">
-                <figure>
-                  <img src="images/auto.jpg"
-                    alt="Illustration automotive et mobilité" />
-                </figure>
-                <h3>Automotive et Mobilité</h3>
-              </article>
-            </a>
-            <a class="filiere-link" role="listitem" href="#"
-              aria-label="Explorer la filière TIC">
-              <article class="filiere-card">
-                <figure>
-                  <img src="images/tic.jpg"
-                    alt="Illustration technologies de l'information et de la communication" />
-                </figure>
-                <h3>TIC</h3>
-              </article>
-            </a>
-            <a class="filiere-link" role="listitem" href="#"
-              aria-label="Explorer la filière Newspace">
-              <article class="filiere-card">
-                <figure>
-                  <img src="images/newspace.jpg" alt="Illustration Newspace" />
-                </figure>
-                <h3>Newspace</h3>
-              </article>
-            </a>
-            <a class="filiere-link" role="listitem" href="#"
-              aria-label="Explorer la filière Yachting et Bluetech">
-              <article class="filiere-card">
-                <figure>
-                  <img src="images/yachting.jpg"
-                    alt="Illustration yachting et bluetech" />
-                </figure>
-                <h3>Yatching et Bluetech</h3>
-              </article>
-            </a>
-            <a class="filiere-link" role="listitem" href="#"
-              aria-label="Explorer la filière Design">
-              <article class="filiere-card">
-                <figure>
-                  <img src="images/design.jpg" alt="Illustration design" />
-                </figure>
-                <h3>Design</h3>
-              </article>
-            </a>
-          </section>
-          <button class="carousel-btn next" aria-label="Suivant"
+
+          <ul id="filiere-grid" class="filiere-grid"
+            aria-label="8 filières d'expertise">
+            <li>
+              <a class="filiere-link" role="listitem" href="#"
+                aria-label="Explorez la filière Intelligence Artificielle">
+                <article class="filiere-card">
+                  <figure>
+                    <img src="images/filiere-ia.jpg"
+                      alt="Illustration intelligence artificielle" />
+                  </figure>
+                  <h3>Intelligence Artificielle</h3>
+                </article>
+              </a>
+            </li>
+            <li>
+              <a class="filiere-link" role="listitem" href="#"
+                aria-label="Explorez la filière Cybersécurité">
+                <article class="filiere-card">
+                  <figure>
+                    <img src="images/cybersecu.jpg"
+                      alt="Illustration cybersécurité" />
+                  </figure>
+                  <h3>Cybersécurité</h3>
+                </article>
+              </a>
+            </li>
+            <li>
+              <a class="filiere-link" role="listitem" href="#"
+                aria-label="Explorez la filière Santé et Biotech">
+                <article class="filiere-card">
+                  <figure>
+                    <img src="images/sante.jpg"
+                      alt="Illustration santé et biotechnologie" />
+                  </figure>
+                  <h3>Santé et Biotech</h3>
+                </article>
+              </a>
+            </li>
+            <li>
+              <a class="filiere-link" role="listitem" href="#"
+                aria-label="Explorez la filière Automotive et Mobilité">
+                <article class="filiere-card">
+                  <figure>
+                    <img src="images/auto.jpg"
+                      alt="Illustration automotive et mobilité" />
+                  </figure>
+                  <h3>Automotive et Mobilité</h3>
+                </article>
+              </a>
+            </li>
+            <li>
+              <a class="filiere-link" role="listitem" href="#"
+                aria-label="Explorez la filière TIC">
+                <article class="filiere-card">
+                  <figure>
+                    <img src="images/tic.jpg"
+                      alt="Illustration technologies de l'information et de la communication" />
+                  </figure>
+                  <h3>TIC</h3>
+                </article>
+              </a>
+            </li>
+            <li>
+              <a class="filiere-link" role="listitem" href="#"
+                aria-label="Explorez la filière Newspace">
+                <article class="filiere-card">
+                  <figure>
+                    <img src="images/newspace.jpg"
+                      alt="Illustration Newspace" />
+                  </figure>
+                  <h3>Newspace</h3>
+                </article>
+              </a>
+            </li>
+            <li>
+              <a class="filiere-link" role="listitem" href="#"
+                aria-label="Explorez la filière Yachting et Bluetech">
+                <article class="filiere-card">
+                  <figure>
+                    <img src="images/yachting.jpg"
+                      alt="Illustration yachting et bluetech" />
+                  </figure>
+                  <h3>Yatching et Bluetech</h3>
+                </article>
+              </a>
+            </li>
+            <li>
+              <a class="filiere-link" role="listitem" href="#"
+                aria-label="Explorez la filière Design">
+                <article class="filiere-card">
+                  <figure>
+                    <img src="images/design.jpg" alt="Illustration design" />
+                  </figure>
+                  <h3>Design</h3>
+                </article>
+              </a>
+            </li>
+          </ul>
+          <button class="carousel-btn next"
+            aria-label="Afficher les filières suivantes"
+            aria-controls="filiere-grid"
             type="button">›</button>
-        </section>
+        </div>
       </section>
 
       <!-- Événements -->
-      <section id="all-evenements" aria-labelledby="titre-events">
-        <h2 class="titre" id="titre-events" tabindex="0">Prochains
+      <section id="all-evenements" role="region" aria-labelledby="titre-events">
+        <h2 class="titre" id="titre-events">Prochains
           évènements</h2>
-        <section id="evenements">
+        <div id="evenements">
           <article>
             <figure>
               <img src="images/congre.png" alt="Logo IASP" />
             </figure>
-            <h3 tabindex="0">Congrès IASP 2026</h3>
+            <h3>Congrès IASP 2026</h3>
 
             <p>
               En Septembre 2026, Sophia Antipolis accueillera le congrès de
@@ -394,7 +412,7 @@
               <img src="images/equipe-Technopole.jpg"
                 alt="L'équipe de la technopole" />
             </figure>
-            <h3 tabindex="0">L’équipe de la Technopole</h3>
+            <h3>L’équipe de la Technopole</h3>
 
             <p>
               Plongez au cours de l’expertise et de l’innovation avec notre
@@ -407,11 +425,11 @@
             </p>
             <a href="#"
               aria-label="En savoir plus sur l'équipe de la Technopole">En
-              savoir plus sur l'équipe</a>
+              savoir plus sur l'équipe de la Technopole</a>
           </article>
-        </section>
+        </div>
         <a class="all-events" href="#"
-          aria-label="Voir tous les évènements">Tous les évènements</a>
+          aria-label="Voir tous les évènements">Voir tous les évènements</a>
       </section>
     </main>
 
@@ -425,13 +443,13 @@
         </ul>
       </nav>
 
-      <address tabindex="0">
+      <address>
         Contact : <a
           href="mailto:contact@sophia-antipolis.fr">contact@sophia-antipolis.fr</a><br>
         Sophia Antipolis, France
       </address>
 
-      <p tabindex="0">&copy; 2025 Sophia Antipolis. Tous droits réservés.</p>
+      <p>&copy; 2025 Sophia Antipolis. Tous droits réservés.</p>
     </footer>
     <script src="js/carousel.js" defer></script>
   </body>
