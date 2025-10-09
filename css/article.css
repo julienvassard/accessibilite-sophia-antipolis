@@ -73,7 +73,7 @@ main#contenu {
     background: var(--accent);
     padding: 1rem;
     border-radius: 8px;
-    border: 1px solid rgba(6, 18, 40, 0.04);
+    border: 1px solid rgba(6, 18, 40, 0.04 );
 }
 
 .related h2, .related li {
@@ -81,20 +81,43 @@ main#contenu {
     color: var(--card-bg);
 }
 
-.related nav ul {
+.related nav ol {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
+.related nav li {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    color: var(--bg);
+}
+
+.related nav li:last-child {
+    border-bottom: none;
+}
+
 .related nav a {
     color: var(--bg);
     text-decoration: none;
+    display: inline-block;
 }
 
 .related nav a:hover,
 .related nav a:focus {
     text-decoration: underline;
+}
+
+.section-title {
+    display: block;
+    font-size: 0.9em;
+    margin-bottom: 0.3em;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.contact-text {
+    color: var(--bg);
 }
 
 .article-footer {
