@@ -14,13 +14,12 @@
             <a href="#contenu" class="skip-link">Aller au contenu principal</a>
             <a href="index.html" class="home-link"
                 aria-label="Retour à l'accueil">
-                <img
-                    src="https://www.sophia-antipolis.fr/wp-content/themes/symisa/dist/images/sophia-antipolis-logo-white-2019.svg"
+                <img src="images/logo.svg"
                     alt="Sophia Antipolis" class="logo" />
             </a>
             <nav aria-label="Menu principal">
                 <ul class="nav-links">
-                    <li><a href="/">Accueil</a></li>
+                    <li><a href="index.html">Accueil</a></li>
                     <li><a href="article.html" class="active"
                             aria-current="page">Notre engagement
                             accessibilité</a></li>
@@ -29,18 +28,17 @@
             </nav>
         </header>
 
-        <main id="contenu" tabindex="-1">
-            <article class="article">
-                <header>
-                    <h1>Notre engagement pour l'accessibilité du site</h1>
-                </header>
+        <main id="contenu">
+            <section class="article">
+                <h1>Notre engagement pour l'accessibilité du
+                    site</h1>
 
                 <figure>
                     <img src="images/accessibilite-numerique.jpg"
                         alt="Un ordinateur portable relié à des icônes représentant l'accessibilité" />
                 </figure>
 
-                <section id="pourquoi">
+                <article id="pourquoi">
                     <h2>Pourquoi l'accessibilité nous importe</h2>
                     <p>
                         Rendre notre site accessible, c'est permettre à toutes
@@ -64,9 +62,9 @@
                         et nos
                         améliorations continues.
                     </p>
-                </section>
+                </article>
 
-                <section id="actions">
+                <article id="actions">
                     <h2>Actions déjà mises en place</h2>
                     <ul>
                         <li>Structure sémantique : usage des landmarks (header,
@@ -87,9 +85,9 @@
                             et annoncés correctement pour les aides
                             techniques.</li>
                     </ul>
-                </section>
+                </article>
 
-                <section id="typographie">
+                <article id="typographie">
                     <h2>Une police pensée pour l'accessibilité</h2>
                     <p>
                         Nous utilisons également une police de caractères
@@ -120,9 +118,9 @@
                         ajusterons le rendu
                         et ajouterons des options d'affichage adaptées.
                     </p>
-                </section>
+                </article>
 
-                <section id="travaux">
+                <article id="travaux">
                     <h2>Travaux à venir</h2>
                     <p>
                         Nous prévoyons de poursuivre les efforts suivants :
@@ -131,28 +129,32 @@
                         différents types de
                         handicap afin d'assurer l'accessibilité de nos services.
                     </p>
-                </section>
+                </article>
 
-                <footer class="article-footer" id="contact">
-                    <p>Pour nous signaler un problème d'accessibilité : <a
-                            href="mailto:accessibilite@sophia-antipolis.fr">accessibilite@sophia-antipolis.fr</a></p>
-                </footer>
-            </article>
+            </section>
 
-            <aside class="related" aria-labelledby="toc-title">
-                <h2 id="toc-title">Plan de la page</h2>
+            <aside class="related">
                 <nav aria-label="Plan de la page">
-                    <ul>
-                        <li><a href="#pourquoi">Pourquoi l'accessibilité nous
-                                importe</a></li>
-                        <hr>
-                        <li><a href="#actions">Actions déjà mises en
-                                place</a></li>
-                        <hr>
-                        <li><a href="#travaux">Travaux à venir</a></li>
-                        <hr>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
+                    <h2 id="toc-title">Plan de la page</h2>
+                    <ol>
+                        <li>
+                            <span class="section-title">Section 1 : </span>
+                            <a href="#pourquoi">Pourquoi l'accessibilité nous importe</a>
+                        </li>
+                        <li>
+                            <span class="section-title">Section 2 : </span>
+                            <a href="#actions">Actions déjà mises en place</a>
+                        </li>
+                        <li>
+                            <span class="section-title">Section 3 : </span>
+                            <a href="#travaux">Travaux à venir</a>
+                        </li>
+                        <li>
+                            <span class="section-title">Section 4 : </span>
+                            <span class="contact-text">Nous contacter : </span>
+                            <a href="mailto:accessibilite@sophia-antipolis.fr">accessibilite@sophia-antipolis.fr</a>
+                        </li>
+                    </ol>
                 </nav>
             </aside>
         </main>
